@@ -1,0 +1,18 @@
+= STEP-2-005: Fehlerlog für Konsistenzprüfung (I18N)
+:type: Logging
+:status: Planning
+:version: 1.0
+:priority: Mittel
+:responsible: Quality Team
+:created: 2025-09-14
+:labels: logging, error-handling, i18n
+:references: <<depends:STEP-2-004>>, <<implements:REQ-QUA-002>>
+
+== Beschreibung
+Implementierung eines lokalisierten Fehlerlog-Systems für Konsistenzprüfungen.
+
+== Ergebnis (MVP)
+Fehler werden in einem Tool-Fenster in IntelliJ angezeigt.
+
+== Technische Hinweise
+Log-Datei: consistency_errors.log im Projektverzeichnis.

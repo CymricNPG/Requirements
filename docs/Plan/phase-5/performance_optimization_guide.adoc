@@ -1,0 +1,18 @@
+= STEP-5-001: Performance-Optimierungen
+:type: Performance
+:status: Planning
+:version: 1.0
+:priority: Mittel
+:responsible: Core Team
+:created: 2025-09-14
+:labels: performance, optimization, caching
+:references: <<depends:STEP-4-005>>, <<enables:STEP-5-002>>, <<extends:REQ-CORE-001>>, <<extends:REQ-CORE-002>>, <<extends:REQ-CORE-003>>
+
+== Beschreibung
+Implementierung von Performance-Optimierungen für große Projekte.
+
+== Ergebnis (MVP)
+Caching für Referenzauflösung; inkrementelle Generierung.
+
+== Technische Hinweise
+Nutzung von Guava Cache für Referenzen.

@@ -1,0 +1,18 @@
+= STEP-5-004: Tests und Qualitätsicherung
+:type: Testing
+:status: Planning
+:version: 1.0
+:priority: Hoch
+:responsible: Quality Team
+:created: 2025-09-14
+:labels: testing, quality-assurance, unit-tests
+:references: <<depends:STEP-5-003>>, <<tests:REQ-CORE-001>>, <<tests:REQ-CORE-002>>, <<tests:REQ-CORE-003>>, <<tests:REQ-UI-001>>, <<tests:REQ-UI-002>>, <<tests:REQ-UI-003>>, <<tests:REQ-VAL-001>>, <<tests:REQ-DOC-001>>, <<tests:REQ-DOC-002>>, <<tests:REQ-QUA-001>>, <<tests:REQ-QUA-002>>
+
+== Beschreibung
+Implementierung umfassender Tests für alle Kernfunktionen des Plugins.
+
+== Ergebnis (MVP)
+Unit-Tests für Kernfunktionen (I18N, Referenzen, Generierung).
+
+== Technische Hinweise
+Nutzung von JUnit 5.

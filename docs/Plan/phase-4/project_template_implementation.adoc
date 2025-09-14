@@ -1,0 +1,18 @@
+= STEP-4-005: Projekttemplates
+:type: Templates
+:status: Planning
+:version: 1.0
+:priority: Niedrig
+:responsible: Configuration Team
+:created: 2025-09-14
+:labels: templates, setup, project-creation
+:references: <<depends:STEP-4-004>>, <<implements:REQ-CFG-002>>
+
+== Beschreibung
+Implementierung von Projekttemplates für schnelles Setup neuer Projekte.
+
+== Ergebnis (MVP)
+Vorlagen für neue Projekte (Ordnerstruktur, domain.adoc, config.yaml).
+
+== Technische Hinweise
+Template-Dateien im Plugin-Bundle.

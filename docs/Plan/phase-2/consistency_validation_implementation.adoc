@@ -1,0 +1,19 @@
+
+= STEP-2-003: Konsistenzprüfung (einzelne Datei)
+:type: Validation
+:status: Planning
+:version: 1.0
+:priority: Kritisch
+:responsible: Validation Team
+:created: 2025-09-14
+:labels: validation, consistency, error-detection
+:references: <<depends:STEP-2-002>>, <<enables:STEP-2-004>>, <<implements:REQ-VAL-001>>
+
+== Beschreibung
+Implementierung der Echtzeit-Konsistenzprüfung für einzelne Dateien.
+
+== Ergebnis (MVP)
+Ungültige Referenzen werden im Editor markiert (Fehlermeldung in Projektsprache).
+
+== Technische Hinweise
+Fehler: "Ungültige Referenz: <<{0}>>" (Resource-Bundle).

@@ -1,0 +1,10 @@
+= PHASE-2: Referenzen + Konsistenzprüfung (MVP 2)
+:status: Planning
+:version: 1.0
+:description: Referenzen, Autovervollständigung, und Echtzeit-Konsistenzprüfung
+:labels: references, validation, consistency, mvp2
+:priority: Hoch
+:responsible: Validation Team
+:created: 2025-09-14
+:duration: 2 Wochen
+:references: <<depends:PHASE-1>>

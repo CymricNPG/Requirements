@@ -1,0 +1,18 @@
+= STEP-4-003: Drag & Drop für Statusänderungen
+:type: Interaction
+:status: Planning
+:version: 1.0
+:priority: Mittel
+:responsible: Extensions Team
+:created: 2025-09-14
+:labels: drag-drop, interaction, status
+:references: <<depends:STEP-4-002>>, <<enables:STEP-4-004>>, <<implements:REQ-EXT-001>>
+
+== Beschreibung
+Implementierung von Drag & Drop-Funktionalität für Statusänderungen im Scrum-Board.
+
+== Ergebnis (MVP)
+Ziehen einer Karte in eine andere Swimlane ändert den Status in der .adoc-Datei.
+
+== Technische Hinweise
+Event-Listener für Drag & Drop + Dateiaktualisierung.

@@ -1,0 +1,18 @@
+= STEP-2-004: Klickbare Referenzen
+:type: UI Enhancement
+:status: Planning
+:version: 1.0
+:priority: Mittel
+:responsible: UI Team
+:created: 2025-09-14
+:labels: ui, navigation, references
+:references: <<depends:STEP-2-003>>, <<enables:STEP-2-005>>, <<implements:REQ-UI-002>>
+
+== Beschreibung
+Implementierung klickbarer Referenzen zur direkten Navigation zwischen Anforderungen.
+
+== Ergebnis (MVP)
+Klick auf <<depends:REQ-AUTO-1>> öffnet REQ-AUTO-1.adoc.
+
+== Technische Hinweise
+Nutzung von IntelliJ's PsiReference für Navigation.

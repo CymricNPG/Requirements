@@ -1,0 +1,9 @@
+= PHASE-1: Grundgerüst + I18N (MVP 1)
+:status: Planning
+:version: 1.0
+:description: Plugin-Grundgerüst mit I18N, Konfiguration, und einfacher Anforderungsverwaltung
+:labels: foundation, i18n, configuration, mvp1
+:priority: Kritisch
+:responsible: Core Team
+:created: 2025-09-14
+:duration: 3 Wochen

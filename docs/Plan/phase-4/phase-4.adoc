@@ -1,0 +1,10 @@
+= PHASE-4: Erweiterte Features (MVP 4)
+:status: Planning
+:version: 1.0
+:description: Filter, Scrum-Board, und Git-Integration
+:labels: advanced-features, scrum, git, filters, mvp4
+:priority: Mittel
+:responsible: Extensions Team
+:created: 2025-09-14
+:duration: 3 Wochen
+:references: <<depends:PHASE-3>>

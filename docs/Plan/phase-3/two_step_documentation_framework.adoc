@@ -1,0 +1,18 @@
+= STEP-3-001: Zwei-Schritt-Generierung (Grundgerüst)
+:type: Core Function
+:status: Planning
+:version: 1.0
+:priority: Kritisch
+:responsible: Documentation Team
+:created: 2025-09-14
+:labels: documentation, generation, architecture
+:references: <<depends:STEP-2-005>>, <<enables:STEP-3-002>>, <<implements:REQ-DOC-001>>
+
+== Beschreibung
+Implementierung des Grundgerüsts für die zweistufige Dokumentationsgenerierung.
+
+== Ergebnis (MVP)
+Alle .adoc-Dateien werden zu einem Gesamtdokument zusammengestellt.
+
+== Technische Hinweise
+Nutzung von Asciidoctor's include-Direktive.

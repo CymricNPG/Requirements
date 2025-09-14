@@ -1,0 +1,18 @@
+= STEP-1-005: Anforderungs-Assistent (UI mit I18N)
+:type: UI
+:status: Planning
+:version: 1.0
+:priority: Kritisch
+:responsible: UI Team
+:created: 2025-09-14
+:labels: ui, assistant, wizard, i18n
+:references: <<depends:STEP-1-004>>, <<enables:STEP-1-006>>, <<implements:REQ-UI-001>>
+
+== Beschreibung
+Entwicklung einer benutzerfreundlichen UI zum Anlegen neuer Anforderungen mit I18N-Unterstützung.
+
+== Ergebnis (MVP)
+UI zum Anlegen von Anforderungen (Pflichtfelder: ID, Kurztext) in der gewählten Sprache.
+
+== Technische Hinweise
+Felder: ID (auto), Kurztext, Typ, Status (Dropdowns mit I18N).

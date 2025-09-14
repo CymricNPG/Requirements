@@ -1,0 +1,18 @@
+= STEP-4-004: Git-Integration (Commit-Nachrichten)
+:type: Integration
+:status: Planning
+:version: 1.0
+:priority: Niedrig
+:responsible: Integration Team
+:created: 2025-09-14
+:labels: git, integration, commit, vcs
+:references: <<depends:STEP-4-003>>, <<enables:STEP-4-005>>, <<implements:REQ-INT-001>>
+
+== Beschreibung
+Implementierung der Git-Integration mit automatischen Commit-Nachrichtenvorschlägen.
+
+== Ergebnis (MVP)
+Vorschlag für Commit-Nachrichten basierend auf geänderten Feldern (I18N).
+
+== Technische Hinweise
+Beispiel: "Updated REQ-AUTO-1: [Added] acceptance criteria".

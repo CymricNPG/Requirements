@@ -1,0 +1,10 @@
+= PHASE-3: Dokumentationsgenerierung (MVP 3)
+:status: Planning
+:version: 1.0
+:description: PDF/HTML-Generierung mit Referenzauflösung und I18N
+:labels: documentation, generation, pdf, html, mvp3
+:priority: Hoch
+:responsible: Documentation Team
+:created: 2025-09-14
+:duration: 3 Wochen
+:references: <<depends:PHASE-2>>

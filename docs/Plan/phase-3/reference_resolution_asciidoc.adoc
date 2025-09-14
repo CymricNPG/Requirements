@@ -1,0 +1,19 @@
+
+= STEP-3-002: Auflösen von <<Typ:ID>>-Referenzen
+:type: Core Function
+:status: Planning
+:version: 1.0
+:priority: Kritisch
+:responsible: Documentation Team
+:created: 2025-09-14
+:labels: references, resolution, conversion
+:references: <<depends:STEP-3-001>>, <<enables:STEP-3-003>>, <<implements:REQ-DOC-001>>
+
+== Beschreibung
+Implementierung der Referenzauflösung für die Dokumentationsgenerierung.
+
+== Ergebnis (MVP)
+Referenzen werden zu AsciiDoc-Links (xref:REQ-AUTO-1.adoc[REQ-AUTO-1]) umgewandelt.
+
+== Technische Hinweise
+Ersetzung mit Regex und Pfadauflösung.

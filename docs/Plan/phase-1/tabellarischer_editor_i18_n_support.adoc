@@ -1,0 +1,18 @@
+= STEP-1-008: Tabellarischer Editor (Grundfunktionen + I18N)
+:type: UI
+:status: Planning
+:version: 1.0
+:priority: Hoch
+:responsible: UI Team
+:created: 2025-09-14
+:labels: ui, table, editor, i18n
+:references: <<depends:STEP-1-007>>, <<implements:REQ-UI-003>>
+
+== Beschreibung
+Entwicklung eines tabellarischen Editors zur Anzeige aller Anforderungen mit I18N-Support.
+
+== Ergebnis (MVP)
+Anzeige aller Anforderungen in einem Verzeichnis (Spalten: ID, Kurztext, Status).
+
+== Technische Hinweise
+Spaltenüberschriften werden aus Resource-Bundles geladen.

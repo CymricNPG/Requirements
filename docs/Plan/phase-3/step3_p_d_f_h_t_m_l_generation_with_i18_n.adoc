@@ -1,0 +1,19 @@
+
+= STEP-3-005: PDF/HTML-Generierung mit I18N
+:type: Output Generation
+:status: Planning
+:version: 1.0
+:priority: Kritisch
+:responsible: Documentation Team
+:created: 2025-09-14
+:labels: pdf, html, generation, i18n
+:references: <<depends:STEP-3-004>>, <<enables:STEP-3-006>>, <<implements:REQ-DOC-001>>, <<implements:REQ-QUA-001>>
+
+== Beschreibung
+Implementierung der finalen PDF/HTML-Generierung mit lokalisierten Überschriften.
+
+== Ergebnis (MVP)
+PDF/HTML mit lokalisierten Überschriften (z. B. "Anforderungen" vs. "Requirements").
+
+== Technische Hinweise
+Nutzung von Asciidoctor-PDF/HTML.

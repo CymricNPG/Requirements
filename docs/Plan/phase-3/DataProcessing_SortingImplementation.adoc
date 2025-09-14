@@ -1,0 +1,18 @@
+= STEP-3-004: Sortierung nach IDs und Domänen
+:type: Data Processing
+:status: Planning
+:version: 1.0
+:priority: Mittel
+:responsible: Documentation Team
+:created: 2025-09-14
+:labels: sorting, organization, structure
+:references: <<depends:STEP-3-003>>, <<enables:STEP-3-005>>, <<implements:REQ-DOC-001>>
+
+== Beschreibung
+Implementierung der Sortierungslogik für Anforderungen in der Dokumentation.
+
+== Ergebnis (MVP)
+Anforderungen werden alphanumerisch nach ID sortiert (Domänenpfad → ID).
+
+== Technische Hinweise
+Sortierung mit Comparator für Pfade (z. B. /automotive/REQ-1 vor /automotive/REQ-2).

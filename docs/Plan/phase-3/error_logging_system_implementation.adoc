@@ -1,0 +1,19 @@
+
+= STEP-3-006: Fehlerlog für Generierung (I18N)
+:type: Logging
+:status: Planning
+:version: 1.0
+:priority: Mittel
+:responsible: Quality Team
+:created: 2025-09-14
+:labels: logging, generation, error-handling, i18n
+:references: <<depends:STEP-3-005>>, <<implements:REQ-DOC-002>>, <<implements:REQ-QUA-002>>
+
+== Beschreibung
+Implementierung eines umfassenden Fehlerlog-Systems für die Dokumentationsgenerierung.
+
+== Ergebnis (MVP)
+Alle Fehler werden in generation_errors.log gespeichert (Projektsprache).
+
+== Technische Hinweise
+Log-Format: [ERROR] {timestamp}: {localized_message}.

@@ -1,0 +1,18 @@
+= STEP-4-001: Filter und Sortierung im tabellarischen Editor
+:type: UI Enhancement
+:status: Planning
+:version: 1.0
+:priority: Hoch
+:responsible: UI Team
+:created: 2025-09-14
+:labels: ui, filter, sorting, table
+:references: <<depends:STEP-3-006>>, <<enables:STEP-4-002>>, <<extends:REQ-UI-003>>
+
+== Beschreibung
+Erweiterung des tabellarischen Editors um erweiterte Filter- und Sortierfunktionen.
+
+== Ergebnis (MVP)
+Filter nach Status, Labels, Typ; Sortierung nach allen Spalten.
+
+== Technische Hinweise
+Nutzung von JTable mit RowFilter und TableRowSorter.

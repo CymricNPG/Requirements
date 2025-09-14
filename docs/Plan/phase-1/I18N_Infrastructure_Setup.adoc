@@ -1,0 +1,18 @@
+= STEP-1-002: I18N-Infrastruktur aufbauen
+:type: Foundation
+:status: Planning
+:version: 1.0
+:priority: Kritisch
+:responsible: Core Team
+:created: 2025-09-14
+:labels: i18n, foundation, localization
+:references: <<depends:STEP-1-001>>, <<enables:STEP-1-003>>, <<implements:REQ-QUA-001>>
+
+== Beschreibung
+Aufbau der Internationalisierungs-Infrastruktur mit Resource-Bundles für UI-Texte.
+
+== Ergebnis (MVP)
+Resource-Bundles für UI-Texte (messages_en/de.properties) sind verfügbar.
+
+== Technische Hinweise
+Beispiel: requirement.create.title=Create New Requirement / Neue Anforderung erstellen.

@@ -1,0 +1,18 @@
+= STEP-5-003: Fehlermeldungen und Logging verbessern
+:type: Quality Assurance
+:status: Planning
+:version: 1.0
+:priority: Hoch
+:responsible: Quality Team
+:created: 2025-09-14
+:labels: logging, error-handling, quality
+:references: <<depends:STEP-5-002>>, <<enables:STEP-5-004>>, <<extends:REQ-QUA-002>>
+
+== Beschreibung
+Verbesserung und Standardisierung aller Fehlermeldungen und Logging-Funktionen.
+
+== Ergebnis (MVP)
+Alle Fehlermeldungen und Warnungen werden geloggt (I18N).
+
+== Technische Hinweise
+Nutzung von java.util.logging.

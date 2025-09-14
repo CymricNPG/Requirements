@@ -1,0 +1,18 @@
+= STEP-1-004: Sprachauswahl in UI
+:type: UI
+:status: Planning
+:version: 1.0
+:priority: Mittel
+:responsible: UI Team
+:created: 2025-09-14
+:labels: ui, i18n, language
+:references: <<depends:STEP-1-003>>, <<enables:STEP-1-005>>, <<implements:REQ-QUA-001>>
+
+== Beschreibung
+Implementierung einer Sprachauswahl-UI für Englisch und Deutsch.
+
+== Ergebnis (MVP)
+Dropdown-Menü zur Auswahl der Sprache (Englisch/Deutsch) ist verfügbar.
+
+== Technische Hinweise
+Sprache wird in config.yaml gespeichert.

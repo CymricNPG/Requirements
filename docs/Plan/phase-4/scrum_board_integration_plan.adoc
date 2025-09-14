@@ -1,0 +1,18 @@
+= STEP-4-002: Scrum-Board-Integration
+:type: UI Feature
+:status: Planning
+:version: 1.0
+:priority: Mittel
+:responsible: Extensions Team
+:created: 2025-09-14
+:labels: scrum, kanban, board, ui
+:references: <<depends:STEP-4-001>>, <<enables:STEP-4-003>>, <<implements:REQ-EXT-001>>
+
+== Beschreibung
+Implementierung einer Scrum-Board-Ansicht für Anforderungen.
+
+== Ergebnis (MVP)
+Anforderungen als Karten im Scrum-Board (Status = Swimlanes).
+
+== Technische Hinweise
+UI mit JavaFX oder Swing (z. B. JPanel mit Drag & Drop).

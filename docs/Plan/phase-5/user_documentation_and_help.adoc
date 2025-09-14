@@ -1,0 +1,18 @@
+= STEP-5-002: Dokumentation und Hilfe (I18N)
+:type: Documentation
+:status: Planning
+:version: 1.0
+:priority: Mittel
+:responsible: Documentation Team
+:created: 2025-09-14
+:labels: documentation, help, i18n, tooltips
+:references: <<depends:STEP-5-001>>, <<enables:STEP-5-003>>, <<extends:REQ-QUA-001>>
+
+== Beschreibung
+Erstellung umfassender Dokumentation und Hilfestellung für Benutzer.
+
+== Ergebnis (MVP)
+Tooltips für alle Metadaten; integrierte Dokumentation im Plugin (Projektsprache).
+
+== Technische Hinweise
+Hilfe-Dateien als .adoc im Plugin-Bundle.

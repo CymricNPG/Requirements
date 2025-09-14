@@ -1,0 +1,18 @@
+= STEP-3-003: Fehlerbehandlung für nicht aufgelöste Referenzen (I18N)
+:type: Error Handling
+:status: Planning
+:version: 1.0
+:priority: Hoch
+:responsible: Quality Team
+:created: 2025-09-14
+:labels: error-handling, references, i18n
+:references: <<depends:STEP-3-002>>, <<enables:STEP-3-004>>, <<implements:REQ-DOC-001>>, <<implements:REQ-QUA-002>>
+
+== Beschreibung
+Implementierung der Fehlerbehandlung für nicht auflösbare Referenzen mit I18N-Support.
+
+== Ergebnis (MVP)
+Nicht aufgelöste Referenzen werden im PDF als <<Typ:ID>> + lokalisierter Fehlereintrag dargestellt.
+
+== Technische Hinweise
+Fehlereintrag: "Nicht aufgelöste Referenz: {0}".

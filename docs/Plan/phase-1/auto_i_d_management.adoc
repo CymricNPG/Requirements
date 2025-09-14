@@ -1,0 +1,18 @@
+= STEP-1-006: Automatische ID-Verwaltung
+:type: Core Function
+:status: Planning
+:version: 1.0
+:priority: Kritisch
+:responsible: Core Team
+:created: 2025-09-14
+:labels: core, id-management, automation
+:references: <<depends:STEP-1-005>>, <<enables:STEP-1-007>>, <<implements:REQ-CORE-002>>
+
+== Beschreibung
+Implementierung der automatischen ID-Generierung basierend auf konfigurierten Formaten.
+
+== Ergebnis (MVP)
+IDs werden nach id-format (z. B. REQ-AUTO-{}) automatisch vergeben.
+
+== Technische Hinweise
+Counter für {} wird in einer .counter-Datei pro Domäne gespeichert.

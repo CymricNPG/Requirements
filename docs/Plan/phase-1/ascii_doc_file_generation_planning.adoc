@@ -1,0 +1,18 @@
+= STEP-1-007: AsciiDoc-Datei-Generierung
+:type: Core Function
+:status: Planning
+:version: 1.0
+:priority: Kritisch
+:responsible: Core Team
+:created: 2025-09-14
+:labels: core, asciidoc, file-generation
+:references: <<depends:STEP-1-006>>, <<enables:STEP-1-008>>, <<implements:REQ-CORE-001>>
+
+== Beschreibung
+Implementierung der Generierung von AsciiDoc-Dateien für Anforderungen.
+
+== Ergebnis (MVP)
+Anforderungen werden als <ID>.adoc gespeichert.
+
+== Technische Hinweise
+Nutzung von Asciidoctor (https://asciidoctor.org/) für spätere Generierung.

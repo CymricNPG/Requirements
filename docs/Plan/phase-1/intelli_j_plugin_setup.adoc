@@ -1,0 +1,19 @@
+
+= STEP-1-001: IntelliJ-Plugin-Projekt einrichten
+:type: Setup
+:status: Planning
+:version: 1.0
+:priority: Kritisch
+:responsible: Core Team
+:created: 2025-09-14
+:labels: foundation, plugin, intellij
+:references: <<enables:STEP-1-002>>, <<implements:REQ-CORE-001>>
+
+== Beschreibung
+Einrichtung eines leeren IntelliJ-Plugin-Projekts mit grundlegender Projektstruktur.
+
+== Ergebnis (MVP)
+Leeres Plugin mit Menüeintrag "Anforderungsmanagement" ist funktionsfähig.
+
+== Technische Hinweise
+Nutzung des IntelliJ Plugin SDK (https://plugins.jetbrains.com/docs/intellij/welcome.html).
