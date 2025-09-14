@@ -142,7 +142,7 @@ replay_pid*
 
 ### Kotlin ###
 # Compiled class file
-
+.kotlin/
 # Log file
 
 # BlueJ files

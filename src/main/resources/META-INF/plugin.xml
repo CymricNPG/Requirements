@@ -26,4 +26,17 @@
     <extensions defaultExtensionNs="com.intellij">
 
     </extensions>
+
+    <!-- Actions (menus, toolbar, etc.) registered by the plugin. -->
+    <actions>
+        <!-- Top-level menu entry in the Main Menu -->
+        <group id="net.npg.requirements.menu" text="Anforderungsmanagement" popup="true">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <!-- A simple action inside the menu to verify functionality -->
+            <action id="net.npg.requirements.actions.ShowRequirementsInfoAction"
+                    class="net.npg.requirements.actions.ShowRequirementsInfoAction"
+                    text="Info…"
+                    description="Zeigt eine Bestätigungsnachricht an"/>
+        </group>
+    </actions>
 </idea-plugin>
