@@ -1,0 +1,16 @@
+= REQ-INT-001: Git-Integration implementieren
+:type: Funktional
+:status: Draft
+:version: 1.0
+:priority: Niedrig
+:responsible: Integration Team
+:created: 2025-09-14
+:references: <<depends:REQ-CORE-001>>
+:labels: integration, git, commit
+
+== Beschreibung
+Das Plugin muss Git-Integration bereitstellen:
+- Vorschlag für Commit-Nachrichten mit Auflistung geänderter Dateien
+- Pro Datei wird angezeigt, welche Felder sich geändert haben
+- Keine eigene Git-Verwaltung, Nutzung der IntelliJ-Git-Funktionen
+- Keine eigene Versionsverwaltung implementieren

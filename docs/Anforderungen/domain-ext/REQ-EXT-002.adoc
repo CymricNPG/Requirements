@@ -1,0 +1,16 @@
+= REQ-EXT-002: Jira-Migration vorbereiten
+:type: Funktional
+:status: Draft
+:version: 1.0
+:priority: Niedrig
+:responsible: Extensions Team
+:created: 2025-09-14
+:references: <<depends:REQ-CFG-001>>
+:labels: extensions, migration, jira
+
+== Beschreibung
+Vorbereitung für Jira-Import-Funktionalität:
+- Import über externe Python-Skripte
+- CSV/JSON-Format-Unterstützung
+- Nicht Teil der initialen Umsetzung
+- Dokumentation der Import-Schnittstelle

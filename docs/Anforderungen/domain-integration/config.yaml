@@ -1,0 +1,2 @@
+# Domain specific config
+id-format: REQ-INT-{}

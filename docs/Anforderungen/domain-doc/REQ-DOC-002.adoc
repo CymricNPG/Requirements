@@ -1,0 +1,17 @@
+= REQ-DOC-002: Flexible Generierungsoptionen
+:type: Funktional
+:status: Draft
+:version: 1.0
+:priority: Mittel
+:responsible: Documentation Team
+:created: 2025-09-14
+:references: <<extends:REQ-DOC-001>>
+:labels: documentation, options, recursive
+
+== Beschreibung
+Der Benutzer kann die Dokumentationsgenerierung flexibel steuern:
+
+- Generierung auf jeder Ebene der Hierarchie möglich
+- Auswahl zwischen aktueller Domäne oder rekursiver Inklusion aller Sub-Domänen
+- Vor Generierung werden alle Konsistenzfehler angezeigt
+- Korrektheit hat Vorrang vor Performanz

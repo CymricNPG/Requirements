@@ -1,0 +1,5 @@
+= DOMAIN-QUALITY: Qualität und Internationalisierung
+:status: Active
+:version: 1.0
+:description: Qualitätsanforderungen, Internationalisierung und Fehlerbehandlung
+:labels: quality, i18n, error-handling

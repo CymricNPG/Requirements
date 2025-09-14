@@ -1,0 +1,17 @@
+= REQ-CORE-001: Dateibasierte Struktur implementieren
+:type: Funktional
+:status: Draft
+:version: 1.0
+:priority: Hoch
+:responsible: Core Team
+:created: 2025-09-14
+:references: <<depends:REQ-CORE-002>>
+:labels: core, filesystem
+
+== Beschreibung
+Das Plugin muss eine dateibasierte Struktur unterstützen, bei der:
+
+- Jede Domäne einem Dateisystemordner entspricht
+- Jede Domäne eine domain.adoc-Datei enthält
+- Jede Anforderung als separate <ID>.adoc-Datei gespeichert wird
+- Hierarchische Organisation über das Dateisystem ermöglicht wird

@@ -1,0 +1,5 @@
+= DOMAIN-VALIDATION: Validierung und Konsistenzprüfung
+:status: Active
+:version: 1.0
+:description: Echtzeit-Validierung und Konsistenzprüfungen für Anforderungen
+:labels: validation, consistency, realtime

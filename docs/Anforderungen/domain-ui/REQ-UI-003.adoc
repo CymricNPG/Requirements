@@ -1,0 +1,17 @@
+= REQ-UI-003: Tabellarischen Editor implementieren
+:type: Funktional
+:status: Draft
+:version: 1.0
+:priority: Hoch
+:responsible: UI Team
+:created: 2025-09-14
+:references: <<depends:REQ-CORE-001>>
+:labels: ui, table, filter
+
+== Beschreibung
+Ein tabellarischer Editor muss folgende Funktionen bieten:
+- Rekursive Anzeige aller Anforderungen in einem Verzeichnis
+- Spalten entsprechen den Metadatenfeldern
+- Sortierung nach jeder Spalte
+- Filterfunktionen für vordefinierte Wertlisten
+- Klickbare Referenzen zum Öffnen referenzierter Dateien

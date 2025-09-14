@@ -1,0 +1,15 @@
+
+= REQ-CFG-003: YAML-basierte Domainkonfiguration
+:type: Funktional
+:status: Draft
+:version: 1.0
+:priority: Hoch
+:responsible: Configuration Team
+:created: 2025-09-14
+:references: <<depends:REQ-CORE-001>>
+:labels: configuration, yaml, project
+
+== Beschreibung
+Das Plugin muss eine YAML-Konfigurationsdatei pro Domain unterstützen:
+
+- ID-Format für ID der Anforderungen, überschreibt die projektweite Konfiguration

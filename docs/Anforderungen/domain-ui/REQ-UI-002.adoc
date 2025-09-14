@@ -1,0 +1,16 @@
+= REQ-UI-002: AsciiDoc-Editor Integration
+:type: Funktional
+:status: Draft
+:version: 1.0
+:priority: Mittel
+:responsible: UI Team
+:created: 2025-09-14
+:references: <<depends:REQ-UI-001>>
+:labels: ui, editor, asciidoc
+
+== Beschreibung
+Der Anforderungseditor muss das AsciiDoc-Plugin von IntelliJ nutzen:
+
+- Command-Completion für alle Felder und Referenzen
+- Integration in IntelliJ-Editor
+- Syntax-Highlighting und Vorschau-Funktionalität

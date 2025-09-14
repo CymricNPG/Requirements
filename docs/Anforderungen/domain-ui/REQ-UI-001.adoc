@@ -1,0 +1,16 @@
+= REQ-UI-001: Anforderungs-Assistent entwickeln
+:type: Funktional
+:status: Draft
+:version: 1.0
+:priority: Hoch
+:responsible: UI Team
+:created: 2025-09-14
+:references: <<depends:REQ-CORE-002>>
+:labels: ui, assistant, wizard
+
+== Beschreibung
+Ein UI-Assistent zum Anlegen neuer Anforderungen muss bereitgestellt werden:
+- Eingabefelder für alle Metadaten außer detaillierter Beschreibung
+- Automatische ID-Vergabe mit Editiermöglichkeit
+- Autovervollständigung für Referenzen
+- Datei wird nach OK-Klick automatisch angelegt

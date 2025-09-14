@@ -1,0 +1,5 @@
+= DOMAIN-INTEGRATION: Integration und Versionsverwaltung
+:status: Active
+:version: 1.0
+:description: Git-Integration und externe Integrationen des Plugins
+:labels: integration, git, vcs

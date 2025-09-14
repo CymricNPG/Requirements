@@ -1,0 +1,5 @@
+= Kern-Plugin-Funktionalitäten
+:status: Active
+:version: 1.0
+:description: Zentrale Funktionalitäten des IntelliJ-Plugins für dateibasiertes Anforderungsmanagement
+:labels: core, plugin, intellij

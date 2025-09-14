@@ -1,0 +1,18 @@
+
+= REQ-CFG-001: YAML-basierte Projektkonfiguration
+:type: Funktional
+:status: Draft
+:version: 1.0
+:priority: Hoch
+:responsible: Configuration Team
+:created: 2025-09-14
+:references: <<depends:REQ-CORE-002>>
+:labels: configuration, yaml, project
+
+== Beschreibung
+Das Plugin muss eine zentrale YAML-Konfigurationsdatei unterstützen:
+
+- Eine projektweite config.yaml im Projektverzeichnis
+- Konfiguration für Referenztypen, Status, Versionen, Prioritäten, Labels und Mitglieder
+- ID-Formate für Anforderungen und Domänen
+- Referenztypen bestehen aus ID, Kurztext und Beschreibung

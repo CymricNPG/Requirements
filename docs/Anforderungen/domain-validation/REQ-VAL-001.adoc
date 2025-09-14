@@ -1,0 +1,17 @@
+= REQ-VAL-001: Echtzeit-Konsistenzprüfung
+:type: Funktional
+:status: Draft
+:version: 1.0
+:priority: Hoch
+:responsible: Validation Team
+:created: 2025-09-14
+:references: <<depends:REQ-CORE-003>>
+:labels: validation, realtime, consistency
+
+== Beschreibung
+Das Plugin muss eine Echtzeit-Konsistenzprüfung bereitstellen:
+- Überprüfung der Referenzen auf Gültigkeit
+- Direkte Fehlermarkierung in IntelliJ
+- Nur strukturelle, keine inhaltliche Konsistenzprüfung
+- Prüfung nur der aktuell geöffneten Datei
+- Manuelle Gesamtprüfung aller Dateien auf Anfrage

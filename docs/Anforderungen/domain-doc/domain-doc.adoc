@@ -1,0 +1,5 @@
+= Dokumentationsgenerierung
+:status: Active
+:version: 1.0
+:description: Generierung von PDF/HTML-Dokumentation aus AsciiDoc-Anforderungen
+:labels: documentation, pdf, html, generation

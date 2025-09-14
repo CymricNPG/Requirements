@@ -1,0 +1,20 @@
+= REQ-DOC-001: Zwei-Schritt-Dokumentationsgenerierung
+:type: Funktional
+:status: Draft
+:version: 1.0
+:priority: Mittel
+:responsible: Documentation Team
+:created: 2025-09-14
+:references: <<depends:REQ-CORE-003>>, <<depends:REQ-VAL-001>>
+:labels: documentation, generation, asciidoc
+
+== Beschreibung
+Die Dokumentationsgenerierung erfolgt in zwei Schritten:
+
+1. Erstellung eines Gesamtdokuments mit aufgelösten Referenzen
+2. Generierung in PDF/HTML unter Nutzung aller AsciiDoc-Features
+
+- Nicht auflösbare Referenzen werden als Text dargestellt
+- Fehlerlog wird nach Generierung angezeigt
+- Alphanumerische Sortierung nach IDs
+- Hierarchische Struktur wird beibehalten

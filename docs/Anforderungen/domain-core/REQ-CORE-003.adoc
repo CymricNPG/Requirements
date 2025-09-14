@@ -1,0 +1,17 @@
+= REQ-CORE-003: Referenzsystem implementieren
+:type: Funktional
+:status: Draft
+:version: 1.0
+:priority: Hoch
+:responsible: Core Team
+:created: 2025-09-14
+:references: <<depends:REQ-CORE-001>>
+:labels: core, references
+
+== Beschreibung
+Das Plugin muss ein umfassendes Referenzsystem bereitstellen:
+
+- Eigenes Format: \<<Typ:ID>>
+- Benutzerdefinierte Referenztypen mit Schlüsselwort und Beschreibung
+- Zirkuläre Referenzen sind erlaubt
+- Referenzvalidierung und -auflösung

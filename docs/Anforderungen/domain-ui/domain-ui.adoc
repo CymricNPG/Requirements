@@ -1,0 +1,5 @@
+= DOMAIN-UI: Benutzeroberflächen-Komponenten
+:status: Active
+:version: 1.0
+:description: Alle Benutzeroberflächen und Editoren des Plugins
+:labels: ui, editor, assistant

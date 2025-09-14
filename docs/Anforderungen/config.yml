@@ -1,0 +1,194 @@
+# Projektweite Konfigurationsdatei für IntelliJ Requirements Management Plugin
+# Sprache für die Benutzeroberfläche (en, de)
+language: de
+
+# ID-Format für Anforderungen (Platzhalter {} für fortlaufende Nummer)
+id-format: REQ-{}
+# ID-Format für Domänen
+domain-id-format: domain-{}
+
+# Referenztypen mit ID, Kurztext und ausführlicher Beschreibung
+referencetypes:
+  - id: depends
+    summary: Abhängigkeit
+    description: Diese Anforderung ist abhängig von der referenzierten Anforderung und kann erst implementiert werden, wenn die Abhängigkeit erfüllt ist.
+  - id: extends
+    summary: Erweitert
+    description: Diese Anforderung erweitert die Funktionalität der referenzierten Anforderung um zusätzliche Features oder Aspekte.
+  - id: tests
+    summary: Testet
+    description: Diese Anforderung wird durch die referenzierte Testanforderung oder den Testfall abgedeckt.
+  - id: conflicts
+    summary: Konfligiert
+    description: Diese Anforderung steht im Konflikt mit der referenzierten Anforderung und erfordert eine Auflösung.
+  - id: derives
+    summary: Leitet ab
+    description: Diese Anforderung ist aus der referenzierten Anforderung abgeleitet oder spezifiziert diese weiter.
+  - id: refines
+    summary: Verfeinert
+    description: Diese Anforderung verfeinert oder detailliert die referenzierte Anforderung.
+  - id: implements
+    summary: Implementiert
+    description: Diese Anforderung implementiert oder realisiert die referenzierte Anforderung.
+
+# Anforderungstypen
+types:
+  - Funktional
+  - Nicht-funktional
+  - Sicherheit
+  - Performance
+  - Usability
+  - Zuverlässigkeit
+  - Wartbarkeit
+  - Portabilität
+
+# Status-Werte für Anforderungen
+states:
+  - Draft
+  - In Review
+  - Reviewed
+  - Approved
+  - In Implementation
+  - Implemented
+  - In Test
+  - Tested
+  - Accepted
+  - Obsolete
+  - Rejected
+
+# Verfügbare Versionen
+versions:
+  - "1.0"
+  - "1.1"
+  - "1.2"
+  - "2.0"
+  - "2.1"
+  - "3.0"
+
+# Prioritätsstufen
+priorities:
+  - Kritisch
+  - Hoch
+  - Mittel
+  - Niedrig
+  - Optional
+
+# Verfügbare Labels (können domänenspezifisch erweitert werden)
+labels:
+  - backend
+  - frontend
+  - database
+  - api
+  - ui
+  - security
+  - performance
+  - integration
+  - testing
+  - documentation
+  - core
+  - plugin
+  - intellij
+  - filesystem
+  - validation
+  - i18n
+  - configuration
+  - git
+  - scrum
+  - migration
+
+# Projektmitglieder
+members:
+  - "Hans Meier"
+  - "Robin Marshall"
+  - "Sarah Connor"
+  - "John Doe"
+  - "Core Team"
+  - "UI Team"
+  - "Validation Team"
+  - "Documentation Team"
+  - "Integration Team"
+  - "Configuration Team"
+  - "Quality Team"
+  - "Extensions Team"
+
+# Domänen-spezifische Konfigurationen (optional)
+domain-configs:
+  core:
+    id-prefix: CORE
+    labels:
+      - core
+      - plugin
+      - intellij
+      - filesystem
+  ui:
+    id-prefix: UI
+    labels:
+      - ui
+      - editor
+      - assistant
+      - wizard
+      - table
+      - filter
+  validation:
+    id-prefix: VAL
+    labels:
+      - validation
+      - consistency
+      - realtime
+  documentation:
+    id-prefix: DOC
+    labels:
+      - documentation
+      - pdf
+      - html
+      - generation
+      - asciidoc
+  integration:
+    id-prefix: INT
+    labels:
+      - integration
+      - git
+      - vcs
+      - commit
+  configuration:
+    id-prefix: CFG
+    labels:
+      - configuration
+      - yaml
+      - project
+      - templates
+      - setup
+  quality:
+    id-prefix: QUA
+    labels:
+      - quality
+      - i18n
+      - localization
+      - error-handling
+      - logging
+  extensions:
+    id-prefix: EXT
+    labels:
+      - extensions
+      - scrum
+      - kanban
+      - migration
+      - jira
+      - future
+
+# Plugin-spezifische Einstellungen
+plugin-settings:
+  # Automatische ID-Generierung aktivieren
+  auto-generate-ids: true
+  # Automatische Datumsetzung beim Erstellen neuer Anforderungen
+  auto-set-creation-date: true
+  # Echtzeit-Validierung aktivieren
+  realtime-validation: true
+  # Maximale Anzahl Zeichen für Kurztext
+  max-summary-length: 256
+  # Standardmäßig rekursive Dokumentgenerierung
+  default-recursive-generation: true
+  # Fehlerlog nach Dokumentgenerierung anzeigen
+  show-error-log: true
+  # Commit-Nachrichtenvorschläge aktivieren
+  suggest-commit-messages: true

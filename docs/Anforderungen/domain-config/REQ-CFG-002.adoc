@@ -1,0 +1,17 @@
+= REQ-CFG-002: Projekttemplates bereitstellen
+:type: Funktional
+:status: Draft
+:version: 1.0
+:priority: Niedrig
+:responsible: Configuration Team
+:created: 2025-09-14
+:references: <<depends:REQ-CFG-001>>
+:labels: configuration, templates, setup
+
+== Beschreibung
+Das Plugin muss Projekttemplates bereitstellen:
+
+- Vorlagen für neue Projekte mit Ordnerstruktur
+- domain.adoc-Vorlagen
+- Integration in IntelliJ-Projektanlage mit Option "Anforderungsanalyse"
+- Automatische Einrichtung der Grundkonfiguration

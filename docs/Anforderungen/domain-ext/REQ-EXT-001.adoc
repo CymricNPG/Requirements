@@ -1,0 +1,17 @@
+= REQ-EXT-001: Scrum-Board Integration
+:type: Funktional
+:status: Draft
+:version: 1.0
+:priority: Niedrig
+:responsible: Extensions Team
+:created: 2025-09-14
+:references: <<depends:REQ-UI-003>>
+:labels: extensions, scrum, kanban
+
+== Beschreibung
+Einfache Scrum-Board-Funktionalität als Erweiterung:
+- Anzeige aller Anforderungen einer Domäne und Sub-Domänen
+- Status entspricht Swimlanes
+- Karten mit Kurztext (3 Zeilen, max. 80 Zeichen)
+- Drag-and-Drop zwischen Swimlanes ändert Status
+- Integration mit IntelliJ-Taskverwaltung

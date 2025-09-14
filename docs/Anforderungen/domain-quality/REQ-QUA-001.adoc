@@ -1,0 +1,17 @@
+= REQ-QUA-001: Internationalisierung implementieren
+:type: Nicht-funktional
+:status: Draft
+:version: 1.0
+:priority: Mittel
+:responsible: Quality Team
+:created: 2025-09-14
+:references: <<depends:REQ-CFG-001>>
+:labels: quality, i18n, localization
+
+== Beschreibung
+Das Plugin muss vollständige I18N-Unterstützung bieten:
+- Initiale Sprachen: Englisch und Deutsch
+- Spracheinstellung in Konfigurationsdatei
+- Metadaten und interne Bezeichnungen bleiben in Englisch
+- Dynamischer Sprachwechsel ohne Neustart
+- Fallback auf Englisch bei fehlenden Übersetzungen

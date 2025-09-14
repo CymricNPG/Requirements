@@ -1,0 +1,5 @@
+= DOMAIN-EXT: Erweiterungen und Future Features
+:status: Active
+:version: 1.0
+:description: Geplante Erweiterungen und zukünftige Features
+:labels: extensions, scrum, migration, future

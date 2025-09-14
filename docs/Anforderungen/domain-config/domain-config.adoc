@@ -1,0 +1,5 @@
+= Konfiguration und Setup
+:status: Active
+:version: 1.0
+:description: Projektkonfiguration und Template-Management
+:labels: configuration, yaml, templates

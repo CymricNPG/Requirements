@@ -1,0 +1,17 @@
+= REQ-CORE-002: ID-Management und -Generierung
+:type: Funktional
+:status: Draft
+:version: 1.0
+:priority: Hoch
+:responsible: Core Team
+:created: 2025-09-14
+:references: <<extends:REQ-CORE-001>>
+:labels: core, id-management
+
+== Beschreibung
+Das Plugin muss ein konfigurierbares ID-Management bereitstellen:
+
+- Eindeutige IDs pro Projekt
+- Konfigurierbares Format pro Domäne mit Platzhalter {} für fortlaufende Nummer
+- Automatische ID-Generierung basierend auf dem konfigurierten Format
+- ID entspricht dem Dateinamen ohne Erweiterung
