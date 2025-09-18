@@ -1,7 +1,7 @@
 
 = STEP-1-001: IntelliJ-Plugin-Projekt einrichten
 :type: Setup
-:status: In Implementation
+:status: Implemented
 :version: 1.0
 :priority: Kritisch
 :responsible: Core Team
