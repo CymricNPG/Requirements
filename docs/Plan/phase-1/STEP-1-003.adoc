@@ -1,19 +1,21 @@
-
 = STEP-1-003: Konfigurationsdatei (config.yaml) parsen
 :type: Configuration
-:status: Planning
+:status: In implementation
 :version: 1.0
 :priority: Hoch
 :responsible: Core Team
 :created: 2025-09-14
 :labels: configuration, yaml, parsing
-:references: <<depends:STEP-1-002>>, <<enables:STEP-1-004>>, <<implements:REQ-CFG-001>>
+:references: <<depends:STEP-1-002>>, <<enables:STEP-1-004>>, <<implements:REQ-CFG-001>>, <<implements:REQ-CFG-003>>
 
 == Beschreibung
+
 Implementierung des YAML-Parsers für die Projektkonfigurationsdatei.
 
 == Ergebnis (MVP)
-Plugin liest language, id-format, types, states, etc. aus config.yaml.
+
+Plugin liest id-format, types, states, etc. aus config.yaml.
 
 == Technische Hinweise
-Nutzung von SnakeYAML (https://bitbucket.org/snakeyaml/snakeyaml) für YAML-Parsing.
+
+Nutzung von **kotlinx.serialization** für YAML-Parsing.

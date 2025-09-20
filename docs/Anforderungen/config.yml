@@ -1,6 +1,6 @@
 # Projektweite Konfigurationsdatei für IntelliJ Requirements Management Plugin
 # Sprache für die Benutzeroberfläche (en, de)
-language: de
+# no longer supported: language: de
 
 # ID-Format für Anforderungen (Platzhalter {} für fortlaufende Nummer)
 id-format: REQ-{}

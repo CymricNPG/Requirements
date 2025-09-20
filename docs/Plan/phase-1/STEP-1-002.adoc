@@ -1,6 +1,6 @@
 = STEP-1-002: I18N-Infrastruktur aufbauen
 :type: Foundation
-:status: In Implementation
+:status: Implemented
 :version: 1.0
 :priority: Kritisch
 :responsible: Core Team

@@ -1,7 +1,9 @@
 plugins {
     id("java")
-    id("org.jetbrains.kotlin.jvm") version "2.1.0"
+    id("org.jetbrains.kotlin.jvm") version "2.2.20"
     id("org.jetbrains.intellij.platform") version "2.7.1"
+    kotlin("plugin.serialization") version "2.2.20"
+
 }
 
 group = "net.npg"
@@ -24,7 +26,10 @@ dependencies {
         // Add necessary plugin dependencies for compilation here, example:
         // bundledPlugin("com.intellij.java")
     }
-    testImplementation("org.junit.jupiter:junit-jupiter:5.7.1")
+
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.9.0")
+    implementation("com.charleskorn.kaml:kaml:0.96.0")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.13.4")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     testImplementation("io.mockk:mockk:1.14.5")
     testImplementation(kotlin("test"))
