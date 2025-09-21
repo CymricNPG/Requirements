@@ -1,2 +1,2 @@
 # Domain specific config
-id-format: REQ-QUA-{}
+idFormat: REQ-QUA-{}

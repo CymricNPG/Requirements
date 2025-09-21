@@ -4,7 +4,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class Config(
-    val idFormat: String,
+    val idFormat: String? = null,
     val referenceTypes: Map<String, String> = emptyMap(),
     val states: Map<String, String> = emptyMap(),
     val versions: Map<String, String> = emptyMap(),
