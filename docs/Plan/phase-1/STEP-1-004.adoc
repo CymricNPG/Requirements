@@ -1,6 +1,6 @@
 = STEP-1-004: Sprachauswahl in UI
 :type: UI
-:status: Planning
+:status: Deprecated
 :version: 1.0
 :priority: Mittel
 :responsible: UI Team
@@ -16,3 +16,6 @@ Dropdown-Menü zur Auswahl der Sprache (Englisch/Deutsch) ist verfügbar.
 
 == Technische Hinweise
 Sprache wird in config.yaml gespeichert.
+
+== Kommentare
+Wird nicht mehr umgesetzt, siehe <<REQ-QUA-001>>
