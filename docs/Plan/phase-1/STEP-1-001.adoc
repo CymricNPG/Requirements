@@ -17,3 +17,6 @@ Leeres Plugin mit Menüeintrag "Anforderungsmanagement" ist funktionsfähig.
 
 == Technische Hinweise
 Nutzung des IntelliJ Plugin SDK (https://plugins.jetbrains.com/docs/intellij/welcome.html).
+
+== Kommentare
+- Projekt wurde ohne AI mit IntelliJ aufgesetzt

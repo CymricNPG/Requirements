@@ -19,3 +19,21 @@ Plugin liest id-format, types, states, etc. aus config.yaml.
 == Technische Hinweise
 
 Nutzung von **kotlinx.serialization** für YAML-Parsing.
+
+== Kommentare
+
+* Sehr einfache implementierung durch qwen-coder3
+* Keine Berücksichtigung der hierarchischen Struktur
+* LeChat: Gute Lösung mit Test, wenn man alle Anforderungen als Bibliothek hinterlegt Fazit:
+* Nur Anforderungen un Plan berücksichtigen zu wenig, es fehlte:
+** Einbinden IntelliJ Infrastruktur
+** Reload wenn sich auf dem Dateisystem was ändert.
+** Abfrage Konfig nach Pfad
+** Hierarchie
+** Falsche Bibliotheken verwendet.
+** Das Datenmodell hat gefehlt, oder wurde falsch generiert.
+* Update mit LeChat (alle Anforderungen als Bibliothek hinzugefügt)
+** Code war gut, aber die Abfrage nach Pfad hat immer auf das Dateisystem zugegriffen und nicht auf den Cache
+** Datenmodell immer noch falsch -> Aus Erfahrung besser Datenmodell direkt z.B. mit plantuml hinterlegen
+
+== TODO

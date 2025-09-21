@@ -19,3 +19,20 @@ Resource-Bundles für UI-Texte (messages_en/de.properties) sind verfügbar.
 == Technische Hinweise
 
 Beispiel: requirement.create.title=Create New Requirement / Neue Anforderung erstellen.
+
+== Kommentare
+
+Versuch mit qwen-coder3:30B
+
+- Initiale Klassen und Tests ausreichend, nachdem folgender Kontext hinzugefügt wurde:
+
+Bei der Umsetzung achte auf
+- Testbarkeit- Testingframework ist **Kotlin Test** und MockK
+- SOLID Pattern (Single Responsibility, Open/Closed. Liskov Substitution. Interface Segregation. Dependency Inversion ).
+- Die Sprache ist Kotlin.
+- Schreibe für jede Methode einen Test und dokumentiere alles.
+
+Auffälligkeiten:
+- Keine Verwendung von IntelliJ -> Erst auf expliziter Aufforderung
+- Sprachwechsel in IntelliJ in Tests sehr schwierig, KI lieferte reihenweise falsche Lösungen
+- LeChat hat dann die richtige Methode zu einem Sprachwechsel gefunden

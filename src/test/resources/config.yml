@@ -1,0 +1,113 @@
+# Projektweite Konfigurationsdatei für IntelliJ Requirements Management Plugin
+# Sprache für die Benutzeroberfläche (en, de)
+# no longer supported: language: de
+
+# ID-Format für Anforderungen (Platzhalter {} für fortlaufende Nummer)
+idFormat: STEP-{}
+
+# Referenztypen mit ID, Kurztext und ausführlicher Beschreibung
+referenceTypes:
+  depends: Diese Anforderung ist abhängig von der referenzierten Anforderung und kann erst implementiert werden, wenn die Abhängigkeit erfüllt ist.
+  extends: Diese Anforderung erweitert die Funktionalität der referenzierten Anforderung um zusätzliche Features oder Aspekte.
+  tests: Diese Anforderung wird durch die referenzierte Testanforderung oder den Testfall abgedeckt.
+  conflicts: Diese Anforderung steht im Konflikt mit der referenzierten Anforderung und erfordert eine Auflösung.
+  derives: Diese Anforderung ist aus der referenzierten Anforderung abgeleitet oder spezifiziert diese weiter.
+  refines: Diese Anforderung verfeinert oder detailliert die referenzierte Anforderung.
+  implements: Diese Anforderung implementiert oder realisiert die referenzierte Anforderung.
+
+# Anforderungstypen
+types:
+  Funktional: XXX
+  Nicht-funktional: XXX
+  Sicherheit: XXX
+  Performance: XXX
+  Usability: XXX
+  Zuverlässigkeit: XXX
+  Wartbarkeit: XXX
+  Portabilität: XXX
+
+# Status-Werte für Anforderungen
+states:
+  Draft: XXX
+  In Review: XXX
+  Reviewed: XXX
+  Approved: XXX
+  In Implementation: XXX
+  Implemented: XXX
+  In Test: XXX
+  Tested: XXX
+  Accepted: XXX
+  Obsolete: XXX
+  Rejected: XXX
+
+# Verfügbare Versionen
+versions:
+  "1.0": XXX
+  "1.1": XXX
+  "1.2": XXX
+  "2.0": XXX
+  "2.1": XXX
+  "3.0": XXX
+
+# Prioritätsstufen
+priorities:
+  Kritisch: XXX
+  Hoch: XXX
+  Mittel: XXX
+  Niedrig: XXX
+  Optional: XXX
+
+# Verfügbare Labels (können domänenspezifisch erweitert werden)
+labels:
+  backend: XXX
+  frontend: XXX
+  database: XXX
+  api: XXX
+  ui: XXX
+  security: XXX
+  performance: XXX
+  integration: XXX
+  testing: XXX
+  documentation: XXXon
+  core: XXX
+  plugin: XXX
+  intellij: XXX
+  filesystem: XXX
+  validation: XXX
+  i18n: XXX
+  configurati: XXXon
+  git: XXX
+  scrum: XXX
+  migration: XXX
+
+# Projektmitglieder
+members:
+  "Hans Meier": XXX
+  "Robin Marshall": XXX
+  "Sarah Connor": XXX
+  "John Doe": XXX
+  "Core Team": XXX
+  "UI Team": XXX
+  "Validation Team": XXX
+  "Documentation Team": XXX
+  "Integration Team": XXX
+  "Configuration Team": XXX
+  "Quality Team": XXX
+  "Extensions Team": XXX
+#
+## Plugin-spezifische Einstellungen
+#plugin-settings:
+#  # Automatische ID-Generierung aktivieren
+#  auto-generate-ids: true
+#  # Automatische Datumsetzung beim Erstellen neuer Anforderungen
+#  auto-set-creation-date: true
+#  # Echtzeit-Validierung aktivieren
+#  realtime-validation: true
+#  # Maximale Anzahl Zeichen für Kurztext
+#  max-summary-length: 256
+#  # Standardmäßig rekursive Dokumentgenerierung
+#  default-recursive-generation: true
+#  # Fehlerlog nach Dokumentgenerierung anzeigen
+#  show-error-log: true
+#  # Commit-Nachrichtenvorschläge aktivieren
+#  suggest-commit-messages: true
