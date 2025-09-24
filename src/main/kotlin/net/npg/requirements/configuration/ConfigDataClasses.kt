@@ -3,7 +3,7 @@ package net.npg.requirements.configuration
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Config(
+data class Configuration(
     val idFormat: String? = null,
     val referenceTypes: Map<String, String> = emptyMap(),
     val states: Map<String, String> = emptyMap(),

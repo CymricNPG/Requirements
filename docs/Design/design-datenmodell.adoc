@@ -1,0 +1,52 @@
+= Datenmodell
+:type: Class
+:status: Implemented
+:version: 1.0
+:priority: Kritisch
+:responsible: Core Team
+:created: 2025-09-14
+:labels: foundation, plugin, intellij
+:references: <<enables:STEP-1-005>>
+
+== Diagram
+
+[mermaid]
+....
+classDiagram
+
+    class Requirement {
+        String id
+        String summary
+        String type
+        String status
+        String priority
+        String version
+        String responsible
+        List~String~ labels
+        Date created
+        List~String~ references
+    }
+
+class Domain {
+        String id
+        String summary
+        String text
+        String type
+        String status
+        String priority
+        String responsible
+        Date created
+        List~String~ references
+}
+
+class Configuration {
+    String idFormat
+    Map~String, String~ referenceTypes
+    Map~String, String~ states
+    Map~String, String~ versions
+    Map~String, String~ priorities
+    Map~String, String~ labels
+    Map~String, String~ members
+    Map~String, String~ types
+}
+....

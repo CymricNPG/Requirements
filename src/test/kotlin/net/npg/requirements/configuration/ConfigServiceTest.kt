@@ -9,7 +9,7 @@ import com.intellij.openapi.vfs.newvfs.events.VFileEvent
 import io.mockk.*
 import io.mockk.impl.annotations.MockK
 import io.mockk.junit5.MockKExtension
-import net.npg.requirements.configuration.ConfigurationService.Companion.CONFIG_FILE
+import net.npg.requirements.configuration.IntelliJConfigurationService.Companion.CONFIG_FILE
 import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.BeforeEach
@@ -27,12 +27,12 @@ class ConfigServiceTest {
     private lateinit var mockProject: Project
 
     @MockK
-    private lateinit var mockConfigParser: ConfigParser<Config>
+    private lateinit var mockConfigParser: ConfigParser<Configuration>
 
     @MockK
     private lateinit var mockVirtualFileManager: VirtualFileManager
 
-    private lateinit var configurationService: ConfigurationService
+    private lateinit var configurationService: IntelliJConfigurationService
 
     @BeforeEach
     fun setUp() {
@@ -51,7 +51,7 @@ class ConfigServiceTest {
         every { Disposer.dispose(any()) } just Runs
 
         // Instantiate ConfigService with mocks
-        configurationService = ConfigurationService(mockProject).apply {
+        configurationService = IntelliJConfigurationService(mockProject).apply {
             // Replace the parser with a mock
             val field = this::class.java.getDeclaredField("parser")
             field.isAccessible = true
@@ -69,7 +69,7 @@ class ConfigServiceTest {
         // Vorbereitung
         val configFile = testPath.resolve(CONFIG_FILE)
         Files.writeString(configFile, "bla");
-        val mockConfig = mockk<Config>()
+        val mockConfig = mockk<Configuration>()
 
         every { mockConfigParser.parse(configFile) } returns mockConfig
 

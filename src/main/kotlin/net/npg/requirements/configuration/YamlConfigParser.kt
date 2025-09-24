@@ -8,12 +8,12 @@ import java.nio.file.Path
 /**
  * Implementierung des [ConfigParser] für YAML-Dateien mit Kaml.
  */
-class YamlConfigParser : ConfigParser<Config> {
+class YamlConfigParser : ConfigParser<Configuration> {
     private val yaml = Yaml.default
 
-    override fun parse(file: Path): Config {
+    override fun parse(file: Path): Configuration {
         require(Files.exists(file)) { "Datei existiert nicht: $file" }
         val content = Files.readString(file)
-        return yaml.decodeFromString<Config>(content)
+        return yaml.decodeFromString<Configuration>(content)
     }
 }

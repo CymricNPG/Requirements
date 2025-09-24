@@ -1,4 +1,4 @@
-= Konfiguration und Setup
+= Projektkonfiguration und Template-Management
 :status: Active
 :version: 1.0
 :description: Projektkonfiguration und Template-Management

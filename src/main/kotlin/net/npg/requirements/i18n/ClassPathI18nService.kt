@@ -1,17 +1,9 @@
-package net.npg.requirements
+package net.npg.requirements.i18n
 
 import com.intellij.DynamicBundle
 import java.util.*
 
-/**
- * I18nService - Dienst zur Verwaltung von Internationalisierung (I18N)
- *
- * Diese Klasse implementiert das Singleton-Pattern und verwaltet die
- * Internationalisierung der Benutzeroberfläche basierend auf den Konfigurationen.
- *
- * Nutzt moderne Java Locale APIs und IntelliJ Platform Internationalisierung.
- */
-class I18nService private constructor() {
+class ClassPathI18nService private constructor() : I18nService {
 
     /**
      * IntelliJ Platform Dynamic Bundle für erweiterte Funktionen
@@ -20,16 +12,16 @@ class I18nService private constructor() {
 
     companion object {
         @Volatile
-        private var INSTANCE: I18nService? = null
+        private var INSTANCE: ClassPathI18nService? = null
 
         /**
          * Singleton-Instanz erhalten
          *
          * @return I18nService-Instanz
          */
-        fun getInstance(): I18nService {
+        fun getInstance(): ClassPathI18nService {
             return INSTANCE ?: synchronized(this) {
-                val instance = INSTANCE ?: I18nService()
+                val instance = INSTANCE ?: ClassPathI18nService()
                 INSTANCE = instance
                 instance
             }
@@ -46,7 +38,7 @@ class I18nService private constructor() {
      * @param key Schlüssel für den Text
      * @return Übersetzter Text oder der Schlüssel, wenn kein Eintrag gefunden wurde
      */
-    fun getMessage(key: String): String {
+    override fun getString(key: String): String {
         return try {
             // Versuche zunächst IntelliJ Platform Bundle
             dynamicBundle.getMessage(key)
@@ -62,7 +54,7 @@ class I18nService private constructor() {
      * @param params Parameter für die Formatierung
      * @return Übersetzter Text oder der Schlüssel, wenn kein Eintrag gefunden wurde
      */
-    fun getMessage(key: String, vararg params: Any): String {
+    override fun getString(key: String, vararg params: Any): String {
         return try {
             // Versuche zunächst IntelliJ Platform Bundle mit Parametern
             dynamicBundle.getMessage(key, *params)

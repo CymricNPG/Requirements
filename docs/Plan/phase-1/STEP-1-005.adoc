@@ -6,13 +6,71 @@
 :responsible: UI Team
 :created: 2025-09-14
 :labels: ui, assistant, wizard, i18n
-:references: <<depends:STEP-1-004>>, <<enables:STEP-1-006>>, <<implements:REQ-UI-001>>
+:references: <<depends:STEP-1-004>>, <<enables:STEP-1-006>>, <<implements:REQ-UI-001>>, , <<depends:design-datenmodell>>
 
 == Beschreibung
+
 Entwicklung einer benutzerfreundlichen UI zum Anlegen neuer Anforderungen mit I18N-Unterstützung.
 
+=== Task 1
+
+Der Dialog kann auf einem Verzeichnis mit Rechtsklick geöffnet werden.
+
+Die UI zeigt alle Felder an, die im Datenmodell <<design-datenmodell>> unter Requirement festgelegt sind.
+Diese sind:
+
+* id
+** Diese wird vorausgefüllt mit dem in der Konfiguration beschriebenen idFormat vorbelegt.
+* summary
+** Eine kurze Beschreibung der Anforderung, max 128 Zeichen.
+Wird als Überschrift der ASCIIDoc Datei verwendet.
+* type
+** Eine Auswahlliste mit "types" aus der Configuration.
+Eine leere Auswahl ist möglich.
+* status
+** Eine Auswahlliste mit "states" aus der Configuration.
+Eine leere Auswahl ist möglich.
+* priority
+** Eine Auswahlliste mit "priorities" aus der Configuration.
+Eine leere Auswahl ist möglich.
+* responsible
+** Eine Auswahlliste mit "members" aus der Configuration.
+Eine leere Auswahl ist möglich.
+* labels
+** Mehrfachauswahl von "labels" aus der Configuration.
+Eine leere Auswahl ist möglich.
+* created
+** Eine Datumsauswahl, eingestellt auf das aktuelle Datum.
+* references
+** Aktuell nicht umgesetzt.
+
+Der Benutzer kann entweder Ok oder Cancel drücken.
+Ok ist nicht aktiviert, solange keine valide id vergeben ist.
+
+Weitere Randbedingungen:
+
+* Die UI benötigt den ConfigurationService, I18nService, IdService.
+* Der IdService liefert eine eindeutige id (idFormat aus dem ConfigurationService und eine globale Nummer) für einen Dateipfad zurück.
+Dieser wird in <<STEP-1-006> entwickelt und liefert aktuell nur "ID" zurück.
+* Alle UI-Texte sind i18n.
+* Der Dialog ist in Swing und verwendet das IntelliJ-Plugin-Framework
+* Der Dialog kann zum Testen auch ausserhalb von IntelliJ benutzt werden.
+
+Aktuell nicht umgesetzt:
+- Der Dialog kann auf eine bestehende Datei geöffnet werden.
+- Der Dialog muss innerhalb eines validen Umgebung (vorhandene config.yml) gestartet werden.
+- Der Dialog legt eine Datei an
+
+=== Task 2
+
 == Ergebnis (MVP)
+
 UI zum Anlegen von Anforderungen (Pflichtfelder: ID, Kurztext) in der gewählten Sprache.
 
 == Technische Hinweise
-Felder: ID (auto), Kurztext, Typ, Status (Dropdowns mit I18N).
+
+Felder: ID (auto), Kurztext, Typ, Status (Dropdowns).
+
+== Anmerkungen
+
+Swing/IntelliJ GUI nicht wirklich brauchbar ...

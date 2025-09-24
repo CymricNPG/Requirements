@@ -14,10 +14,14 @@ import java.nio.file.Path
  * Service zum Verwalten der Konfiguration im IntelliJ-Plugin.
  * Reagiert auf Dateiänderungen und lädt die Konfiguration hierarchisch.
  */
+interface ConfigurationService {
+    fun getConfiguration(path: Path): Configuration?
+}
+
 @Service(Service.Level.PROJECT)
-class ConfigurationService(private val project: Project) : Disposable {
-    private val parser: ConfigParser<Config> = YamlConfigParser()
-    val configCache: MutableMap<Path, Config> = mutableMapOf()
+class IntelliJConfigurationService(private val project: Project) : Disposable, ConfigurationService {
+    private val parser: ConfigParser<Configuration> = YamlConfigParser()
+    val configCache: MutableMap<Path, Configuration> = mutableMapOf()
 
     val fileListener: AsyncFileListener = AsyncFileListener { events ->
         object : AsyncFileListener.ChangeApplier {
@@ -46,7 +50,7 @@ class ConfigurationService(private val project: Project) : Disposable {
      * Erzwingt das Neuladen der Konfiguration für ein Verzeichnis.
      * @param directoryPath Pfad zum Verzeichnis.
      */
-    fun reloadConfigForDirectory(directoryPath: Path): Config? {
+    fun reloadConfigForDirectory(directoryPath: Path): Configuration? {
         val absolutePath = directoryPath.toAbsolutePath()
         configCache.remove(absolutePath)
 
@@ -63,7 +67,7 @@ class ConfigurationService(private val project: Project) : Disposable {
         return null
     }
 
-    fun getConfiguration(path: Path): Config? {
+    override fun getConfiguration(path: Path): Configuration? {
         val configs = collectConfigurations(path)
         if (configs.isEmpty()) {
             return null
@@ -77,8 +81,8 @@ class ConfigurationService(private val project: Project) : Disposable {
         return result
     }
 
-    private fun collectConfigurations(path: Path): List<Config> {
-        val configs = mutableListOf<Config>()
+    private fun collectConfigurations(path: Path): List<Configuration> {
+        val configs = mutableListOf<Configuration>()
         var workPath: Path? = path
 
         while (workPath != null) {
@@ -102,13 +106,13 @@ class ConfigurationService(private val project: Project) : Disposable {
     }
 
     companion object {
-        private val LOG = Logger.getInstance(ConfigurationService::class.java)
+        private val LOG = Logger.getInstance(IntelliJConfigurationService::class.java)
         const val CONFIG_FILE = "config.yml"
     }
 }
 
-private fun Config.replace(t: Config): Config {
-    return Config(
+private fun Configuration.replace(t: Configuration): Configuration {
+    return Configuration(
         idFormat = if (t.idFormat != null) idFormat else this.idFormat,
         referenceTypes = t.referenceTypes.ifEmpty { this.referenceTypes },
         states = t.states.ifEmpty { this.states },

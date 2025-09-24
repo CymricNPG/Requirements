@@ -26,7 +26,7 @@ class ConfigReadTest {
     @MockK
     private lateinit var mockVirtualFileManager: VirtualFileManager
 
-    private lateinit var configurationService: ConfigurationService
+    private lateinit var configurationService: IntelliJConfigurationService
 
     @BeforeEach
     fun setUp() {
@@ -45,7 +45,7 @@ class ConfigReadTest {
         every { Disposer.dispose(any()) } just Runs
 
         // Instantiate ConfigService with mocks
-        configurationService = ConfigurationService(mockProject)
+        configurationService = IntelliJConfigurationService(mockProject)
     }
 
     @Test
